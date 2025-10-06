@@ -42,3 +42,22 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
 .menu__list-item-collapsible {
   background: var(--ifm-menu-color-background-hover);
 }
+
+/* Show full card titles for better readability on mobile */
+.card h2.text--truncate {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+@media (max-width: 768px) {
+    .card p.text--truncate {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+    }
+}
+/* Avoid uneven heights on desktop */
+.card {
+    height: 100%;
+}
